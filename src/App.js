@@ -1,6 +1,6 @@
 import About from "Components/About/About";
 import Blogposts from "Components/Blogposts/Blogposts";
-import Greeter from "Components/Greeter/Greeter";
+import Calculator from "Components/Greeter/Greeter";
 import Header from "Components/Header/Header";
 import Home from "Components/Home/Home";
 import Incrementor from "Components/Incrementor/Incrementor";
@@ -19,7 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/greeting" element={<Greeter />} />
+        <Route path="/calculator" element={<Calculator />} />
         <Route path="/increment" element={<Incrementor />} />
         <Route path="/movies" element={<Movies />}>
           <Route index element={<WorstMovies />} />

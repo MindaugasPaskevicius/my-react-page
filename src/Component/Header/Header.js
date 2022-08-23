@@ -43,7 +43,7 @@ const Header = () => {
               }
               to="/greeting"
             >
-              Greeter
+              Calculator
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -51,7 +51,7 @@ const Header = () => {
               }
               to="/increment"
             >
-              Incrementor
+              Todo list
             </NavLink>
             <NavLink
               className={({ isActive }) =>
