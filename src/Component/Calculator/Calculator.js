@@ -2,11 +2,10 @@ import { useState } from 'react';
 import "./Calculator.css";
 
 
-function Calculator () {
+const Calculator = () => {
   const [calc, setCalc] = useState("");
   const [result, setResult] = useState("");
 
-  console.log(typeof result)
 
   const ops = ['/', '*', '+', '-', '.'];
 

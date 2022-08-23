@@ -49,7 +49,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
-              to="/Todo"
+              to="/todo"
             >
               Todo list
             </NavLink>
@@ -61,7 +61,7 @@ const Header = () => {
                   backgroundColor: isActive ? "black" : "",
                 };
               }}
-              to="/bp"
+              to="/blogposts"
             >
               Blogposts
             </NavLink>
