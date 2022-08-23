@@ -64,6 +64,7 @@ const Calculator = () => {
   }
 
   return (
+    <div className='container'>
     <div className="App">
       <div className="calculator">
         <div className="display">
@@ -96,6 +97,7 @@ const Calculator = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }

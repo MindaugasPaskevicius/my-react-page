@@ -1,9 +1,10 @@
 import React from 'react';
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div>
-            Welcome to my page
+        <div className='container'>
+           <h1 className='text-center mt-5'> Welcome to my page </h1>
         </div>
     );
 };
