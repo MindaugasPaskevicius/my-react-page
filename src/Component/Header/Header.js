@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -7,14 +8,14 @@ const Header = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="/home">
           <img
-            src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+            src=""
             alt=""
             width="30"
             height="24"
           />
         </a>
-        <Link className="navbar-brand" to="/home">
-          Awesome App
+        <Link id="logo-letter" className="navbar-brand" to="/home">
+          MY FIRST REACT PAGE
         </Link>
         <button
           className="navbar-toggler"
@@ -29,27 +30,39 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-              to="/home"
+          <NavLink
+              className={"nav-link ms-5"}
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "white" : "",
+                  backgroundColor: isActive ? "grey" : "",
+                };
+              }}
+              to="/Home"
             >
               Home
             </NavLink>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
+              className={"nav-link"}
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "white" : "",
+                  backgroundColor: isActive ? "grey" : "",
+                };
+              }}
               to="/Calculator"
             >
               Calculator
             </NavLink>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-              to="/todo"
+              className={"nav-link"}
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "white" : "",
+                  backgroundColor: isActive ? "grey" : "",
+                };
+              }}
+              to="/Todo"
             >
               Todo list
             </NavLink>
@@ -57,8 +70,8 @@ const Header = () => {
               className={"nav-link"}
               style={({ isActive }) => {
                 return {
-                  color: isActive ? "orange" : "",
-                  backgroundColor: isActive ? "black" : "",
+                  color: isActive ? "white" : "",
+                  backgroundColor: isActive ? "grey" : "",
                 };
               }}
               to="/blogposts"
