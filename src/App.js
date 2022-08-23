@@ -5,7 +5,7 @@ import Home from "./Component/Home/Home";
 import Calculator from "./Component/Calculator/Calculator";
 import Todo from "./Component/Todo/Todo";
 import Blogposts from "./Component/Blogposts/Blogposts";
-//import Footer from "./Component/Footer/Footer";
+import Footer from "./Component/Footer/Footer";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/blogposts" element={<Blogposts />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
