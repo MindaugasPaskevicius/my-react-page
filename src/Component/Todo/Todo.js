@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import "./Todo.css";
 
 let flexContainer = {
   height: "100vh",
@@ -36,8 +37,6 @@ const Todo = () => {
 
   const handleClick = (e) => {
     itemInput.current.value = "";
-    // ... do not allow empty values
-    // ... and repeated values by pressing "add" button
     if (newItem.name !== "") {
       setItems([...items, newItem]);
       setNewItem({ name: "" });
@@ -50,7 +49,8 @@ const Todo = () => {
   };
 
   return (
-    <div style={flexContainer}>
+    <div id="todo" className="container text-center"><h1 className="pt-5">Todo list</h1>
+    <div className="flexContainer">
       <div className="card w-25 text-bg-light">
         <div className="card-body">
           <h1 className="card-title">Items</h1>
@@ -68,7 +68,7 @@ const Todo = () => {
               style={customW35}
               onClick={handleClick}
             >
-              Click me
+              ADD
             </button>
           </div>
           <ul className="list-group">
@@ -92,6 +92,7 @@ const Todo = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };
