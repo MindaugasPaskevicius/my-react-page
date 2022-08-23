@@ -5,22 +5,23 @@ import Home from "./Component/Home/Home";
 import Calculator from "./Component/Calculator/Calculator";
 import Todo from "./Component/Todo/Todo";
 import Blogposts from "./Component/Blogposts/Blogposts";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+//import Footer from "./Component/Footer/Footer";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/todo" element={<Todo />} />
-        <Route path="/bp" element={<Blogposts />} />
+        <Route path="/blogposts" element={<Blogposts />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 export default App;
