@@ -41,7 +41,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
-              to="/greeting"
+              to="/Calculator"
             >
               Calculator
             </NavLink>
@@ -49,41 +49,9 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
-              to="/increment"
+              to="/Todo"
             >
               Todo list
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-              to="/movies"
-            >
-              Movies
-            </NavLink>
-            <NavLink
-              className={"nav-link"}
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? "orange" : "",
-                  backgroundColor: isActive ? "black" : "",
-                };
-              }}
-              to="/about"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={"nav-link"}
-              style={({ isActive }) => {
-                return {
-                  color: isActive ? "orange" : "",
-                  backgroundColor: isActive ? "black" : "",
-                };
-              }}
-              to="/ssu"
-            >
-              SSU
             </NavLink>
             <NavLink
               className={"nav-link"}
