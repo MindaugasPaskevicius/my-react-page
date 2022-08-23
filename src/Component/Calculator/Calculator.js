@@ -64,7 +64,8 @@ const Calculator = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='container text-center'>
+      <h1 className='pt-5'>Calculator</h1>
     <div className="App">
       <div className="calculator">
         <div className="display">
