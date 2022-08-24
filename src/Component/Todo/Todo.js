@@ -1,12 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Todo.css";
 
-let flexContainer = {
-  height: "100vh",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
 
 let customW65 = {
   width: "65%",

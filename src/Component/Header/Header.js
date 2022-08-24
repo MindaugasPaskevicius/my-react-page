@@ -8,10 +8,10 @@ const Header = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="/home">
           <img
-            src="./public/images.jpg"
-            alt=""
-            width="30"
-            height="24"
+            src="../images/images1.jpg"
+            alt="logo"
+            width="45"
+            height="35"
           />
         </a>
         <Link id="logo-letter" className="navbar-brand" to="/home">
