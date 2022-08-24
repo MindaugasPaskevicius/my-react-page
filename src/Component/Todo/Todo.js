@@ -8,8 +8,6 @@ const Todo = () => {
   const itemInput = useRef(null);
   const [itemErrorMsg, setItemErrorMsg] = useState("")
 
-  // Affter reaload page takes info from localStorage
-
   useEffect(() => {
     const storageList = JSON.parse(localStorage.getItem("items"));
     if (storageList) {
@@ -17,14 +15,10 @@ const Todo = () => {
     }
   }, []);
 
-  // Adding imput value in localStorage
-
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
-
-  // Delete list value 
 
   const deleteItem = (index) => {
     items.splice(index, 1)
@@ -36,8 +30,7 @@ const Todo = () => {
   };
 
 
-
-  const handleClick = (e) => {
+   const handleClick = (e) => {
     e.preventDefault();
     itemInput.current.value = "";
 
@@ -58,14 +51,12 @@ const Todo = () => {
   return (
     <div className="container">
       <div className="text-center pt-5"><h1>Todo list</h1></div>
-      <div className="d-flex justify-content-center mt-5">
-      <div id="todo-card">
-        
-          <div className="card-body">
+       <div className="d-flex justify-content-center mt-5">
+         <div id="todo-card">
+           <div className="card-body">
             <h2 className="card-title text-center pt-5">List items</h2>
             <form className="col-12 d-flex m-3 justify-content-center pe-3 pt-4">
               <div className="col-5 ">
-
                 <input
                   className="form-control"
                   ref={itemInput}
