@@ -1,93 +1,104 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./Todo.css";
-
-
-let customW65 = {
-  width: "65%",
-};
-let customW35 = {
-  width: "35%",
-};
+import React, { useState, useRef, useEffect } from "react";
+import './Todo.css';
 
 const Todo = () => {
-  const [newItem, setNewItem] = useState({ name: "" });
+
+  const [newList, setNewList] = useState("");
   const [items, setItems] = useState([]);
   const itemInput = useRef(null);
+  const [itemErrorMsg, setItemErrorMsg] = useState("")
+
+  // Affter reaload page takes info from localStorage
 
   useEffect(() => {
-    const lsItems = localStorage.getItem("items");
-    if (!lsItems) localStorage.setItem("items", JSON.stringify(items));
-    else setItems(JSON.parse(lsItems));
-    // eslint-disable-next-line
+    const storageList = JSON.parse(localStorage.getItem("items"));
+    if (storageList) {
+      setItems(storageList);
+    }
   }, []);
+
+  // Adding imput value in localStorage
 
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
-  const handleInput = (e) => {
-    setNewItem({ name: e.target.value });
-  };
 
-  const handleClick = (e) => {
-    itemInput.current.value = "";
-    if (newItem.name !== "") {
-      setItems([...items, newItem]);
-      setNewItem({ name: "" });
-    }
-  };
+  // Delete list value 
 
   const deleteItem = (index) => {
-    let filteredItems = items.filter((_, i) => i !== index);
-    setItems(filteredItems);
+    items.splice(index, 1)
+    setItems([...items]);
   };
 
+  const handleInput = (e) => {
+    setNewList({ name: e.target.value });
+  };
+
+
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    itemInput.current.value = "";
+
+    if (newList === "") {
+      setItemErrorMsg("Can't leave the title blank");
+
+    }
+    else {
+      let updateItem = JSON.stringify([...items, newList]);
+      localStorage.setItem("items", updateItem);
+      setNewList("")
+      setItems([...items, newList]);
+      setItemErrorMsg("")
+    };
+  };
+
+
   return (
-    <div id="todo" className="container text-center"><h1 className="pt-5">Todo list</h1>
-    <div className="flexContainer">
-      <div className="card w-25 text-bg-light">
-        <div className="card-body">
-          <h1 className="card-title">Items</h1>
-          <div className="row p-3">
-            <input
-              id="input"
-              type="text"
-              className="form-control"
-              style={customW65}
-              ref={itemInput}
-              onChange={handleInput}
-            />
-            <button
-              className="btn btn-secondary"
-              style={customW35}
-              onClick={handleClick}
-            >
-              ADD
-            </button>
+    <div className="container">
+      <div className="text-center pt-5"><h1>Todo list</h1></div>
+      <div className="d-flex justify-content-center mt-5">
+      <div id="todo-card">
+        
+          <div className="card-body">
+            <h2 className="card-title text-center pt-5">List items</h2>
+            <form className="col-12 d-flex m-3 justify-content-center pe-3 pt-4">
+              <div className="col-5 ">
+
+                <input
+                  className="form-control"
+                  ref={itemInput}
+                  onChange={handleInput}
+                />              {itemErrorMsg && <p className="text-danger">{itemErrorMsg}</p>}
+
+              </div>
+
+              <div>
+                <button id="button-add" className="btn ms-3" onClick={handleClick}>
+                  <span>Add</span>
+                </button>
+              </div>
+            </form>
+            <ul className="list-group ">
+              {items.length > 0 ? (
+                items.map((items, index) => (
+                  <li key={index} className="list-group-item mt-2">
+                    {items.name}
+                    <button className="btn btn-success float-end" 
+                    onClick={() => { deleteItem(index); }}>Delete</button>
+                  </li>
+                ))
+              ) : (
+                <div className="text-center text-danger pt-5">No items found!</div>
+              )}
+            </ul>
           </div>
-          <ul className="list-group">
-            {items.length > 0 ? (
-              items.map((item, idx) => (
-                <li key={idx} className="list-group-item">
-                  {item.name}
-                  <button
-                    onClick={() => {
-                      deleteItem(idx);
-                    }}
-                    className="btn btn-warning float-end"
-                  >
-                    Delete
-                  </button>
-                </li>
-              ))
-            ) : (
-              <div>No items found!</div>
-            )}
-          </ul>
-        </div>
+        
+      </div>
       </div>
     </div>
-    </div>
+
   );
 };
 

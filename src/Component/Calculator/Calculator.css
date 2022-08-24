@@ -12,8 +12,8 @@
   .display {
     padding: 16px;
     text-align: right;
-    background-color:rgb(78, 76, 76);
-    color: rgb(239, 224, 224);
+    background-color:rgb(222, 222, 168);
+    color: black;
     font-size: 24px;
     font-weight: 300;
   }
@@ -28,7 +28,7 @@
     appearance: none;
     border: none;
     outline: none;
-    color:rgb(239, 224, 224);
+    color: black;
     font-size: 20px;
     padding: 16px;
     cursor: pointer;
@@ -46,6 +46,7 @@
   .operators button {
     flex: 1 1 0%;
     background-color: grey;
+    color: white;
     font-weight: 700;
     border: solid 1px rgb(78, 76, 76);
   }
@@ -58,7 +59,7 @@
   .digits button {
     flex: 1 1 33.333%;
     max-width: 33.333%;
-    background-color: rgb(78, 76, 76);
+    background-color: rgb(222, 222, 168);
   }
   .container {
     background-color: rgb(235, 224, 224);

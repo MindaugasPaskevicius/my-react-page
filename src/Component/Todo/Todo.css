@@ -1,11 +1,18 @@
-.flexContainer  {
- display: flex;
- align-items: center;
- justify-content: center;
- height: 75vh;
+#todo-card {
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(222, 222, 168);
+    border-radius: 25px;
 }
 
-#todo {
+h2 {
+    color:grey;
+    font-size: 35px;
+}
 
-    background-color:rgb(235, 224, 224) ;
+#button-add {
+    width: 100px;
+    background-color: grey;
+    color: white;
 }

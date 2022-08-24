@@ -1,3 +1,20 @@
 h1 {
     font-size: 70px;
+    color: grey;
+    font-family: s;
+    
+}
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    top: 60px;
+    background-color: rgb(222, 222, 168);
+}
+
+#card p {
+    font-size: 30px;
+    color: rgb(228, 142, 142);
 }
