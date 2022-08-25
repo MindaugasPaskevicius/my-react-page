@@ -6,12 +6,12 @@ import Calculator from "./Component/Calculator/Calculator";
 import Todo from "./Component/Todo/Todo";
 import About from "./Component/About/About";
 import Footer from "./Component/Footer/Footer";
-import { BrowserRouter,Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter,Navigate, Route, Routes } from "react-router-dom";
 
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default App;
