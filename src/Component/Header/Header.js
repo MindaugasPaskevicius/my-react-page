@@ -74,9 +74,9 @@ const Header = () => {
                   backgroundColor: isActive ? "grey" : "",
                 };
               }}
-              to="/blogposts"
+              to="/about"
             >
-              Blogposts
+              About
             </NavLink>
           </div>
         </div>

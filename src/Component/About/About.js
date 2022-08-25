@@ -1,12 +1,13 @@
 import React from 'react';
-import "./Blogposts.css";
+import "./About.css";
 
-const Blogposts = () => {
+const About = () => {
     return (
         <div className='container text-center pt-5 blog'>
-            <h1>Blogposts</h1>
+            <h1>About</h1>
+            
         </div>
     );
 };
 
-export default Blogposts;
+export default About;

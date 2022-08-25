@@ -77,7 +77,7 @@ const Todo = () => {
                 items.map((items, index) => (
                   <li key={index} className="list-group-item mt-2">
                     {items.name}
-                    <button className="btn btn-success float-end" 
+                    <button id="del-button" className="btn float-end" 
                     onClick={() => { deleteItem(index); }}>Delete</button>
                   </li>
                 ))

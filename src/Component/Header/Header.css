@@ -8,3 +8,7 @@ nav {
 img {
     border-radius: 50%;
 }
+
+.header {
+    position: fixed;
+}

@@ -28,3 +28,7 @@ h2 {
     width: 300px;
     justify-content: center;
 }
+
+#del-button {
+    background-color: rgb(222, 222, 168);
+}
