@@ -6,7 +6,7 @@ const Footer = () => (
     <div>
     <img
             src="../images/fb.png"
-            alt="logo"
+            alt="facebook logo"
             width="30"
             height="30"
           />
@@ -15,7 +15,7 @@ const Footer = () => (
     <div>
     <img 
             src="../images/link.png"
-            alt="logo"
+            alt="linkedin logo"
             width="30"
             height="30"
           />
@@ -24,7 +24,7 @@ const Footer = () => (
     <div>
     <img
             src="../images/git.png"
-            alt="logo"
+            alt="Github logo"
             width="30"
             height="30"
           />

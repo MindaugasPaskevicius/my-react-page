@@ -6,7 +6,7 @@ import Calculator from "./Component/Calculator/Calculator";
 import Todo from "./Component/Todo/Todo";
 import About from "./Component/About/About";
 import Footer from "./Component/Footer/Footer";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter,Navigate, Route, Routes } from "react-router-dom";
 
 
 const App = () => {
