@@ -31,7 +31,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
           <NavLink
-              className={"nav-link ms-5"}
+              className={"nav-link "}
               style={({ isActive }) => {
                 return {
                   color: isActive ? "white" : "",
@@ -76,7 +76,7 @@ const Header = () => {
               }}
               to="/about"
             >
-              About
+              About Me
             </NavLink>
           </div>
         </div>
