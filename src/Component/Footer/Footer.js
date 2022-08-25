@@ -10,7 +10,7 @@ const Footer = () => (
             width="30"
             height="30"
           />
-    <spam className="ps-2 pe-5">Facebook</spam>
+    <a className="ps-2" href="https://www.facebook.com/mindaugas.paskevicius.54">Facebook</a>
     </div>
     <div>
     <img 
@@ -19,7 +19,7 @@ const Footer = () => (
             width="30"
             height="30"
           />
-    <spam className="ps-2 pe-5">Linkedin</spam>
+    <a className="ps-2" href="https://www.linkedin.com/in/mindaugas-pa%C5%A1kevi%C4%8Dius-4a0b6b153/">Linkedin</a>
     </div>
     <div>
     <img
@@ -28,7 +28,7 @@ const Footer = () => (
             width="30"
             height="30"
           />
-    <spam className="ps-2">Github</spam>
+    <a className="ps-2" href="https://github.com/MindaugasPaskevicius?tab=repositories">Github</a>
     </div>
   </div>
 );
