@@ -16,3 +16,9 @@ h2 {
     background-color: grey;
     color: white;
 }
+
+.list-group {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
