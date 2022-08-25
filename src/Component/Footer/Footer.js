@@ -3,9 +3,9 @@ import "./Footer.css";
 
 const Footer = () => (
   <div className="footer">
-    <spam className="pe-2">Youtube</spam>
-    <spam className="pe-2">Facebook</spam>
-    <spam>Linkedin</spam>
+    <spam className="pe-5">Facebook</spam>
+    <spam className="pe-5">Linkedin</spam>
+    <spam>Github</spam>
   </div>
 );
 
