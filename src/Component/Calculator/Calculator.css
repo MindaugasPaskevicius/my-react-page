@@ -63,7 +63,9 @@
   }
   .container {
     background-color: rgb(235, 224, 224);
-    height: 100vh;
+  }
 
+  #calc {
+    height: 100vh;
   }
   

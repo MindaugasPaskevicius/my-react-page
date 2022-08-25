@@ -64,7 +64,7 @@ const Calculator = () => {
   }
 
   return (
-    <div className='container text-center'>
+    <div id="calc" className='container text-center'>
       <h1 className='pt-5'>Calculator</h1>
     <div className="App">
       <div className="calculator">
