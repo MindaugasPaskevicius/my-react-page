@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg position-fixed">
       <div className="container-fluid">
         <a className="navbar-brand" href="/home">
           <img
@@ -14,7 +14,7 @@ const Header = () => {
             height="35"
           />
         </a>
-        <Link id="logo-letter" className="navbar-brand" to="/home">
+        <Link id="logo-letter" className="navbar-brand" to="/Home">
           MY FIRST REACT PAGE
         </Link>
         <button
@@ -74,7 +74,7 @@ const Header = () => {
                   backgroundColor: isActive ? "grey" : "",
                 };
               }}
-              to="/about"
+              to="/About"
             >
               About Me
             </NavLink>

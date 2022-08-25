@@ -50,7 +50,7 @@ const Todo = () => {
 
   return (
     <div id="todo-container" className="container">
-      <div className="text-center pt-5"><h1>Todo list</h1></div>
+      <div className="text-center"><h1>Todo list</h1></div>
        <div className="d-flex justify-content-center mt-5">
          <div id="todo-card">
            <div className="card-body">
@@ -62,10 +62,8 @@ const Todo = () => {
                   ref={itemInput}
                   onChange={handleInput}
                 />              {itemErrorMsg && <p className="text-danger">{itemErrorMsg}</p>}
-
-              </div>
-
-              <div>
+                </div>
+                <div>
                 <button id="button-add" className="btn ms-3" onClick={handleClick}>
                   <span>Add</span>
                 </button>
@@ -87,8 +85,7 @@ const Todo = () => {
             </ul>
             </div>
           </div>
-        
-      </div>
+          </div>
       </div>
     </div>
 
