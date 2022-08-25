@@ -7,7 +7,7 @@ const Home = () => {
            <h1 className='text-center pt-5'> Welcome </h1>
            <div className='d-flex justify-content-center'>
            <div id='card' className='card'>
-            <p className='ps-2 pe-2 ms-3'>Welcome to my first react page. In it you will find a fully functional calculator and a todo list. In the future, the page will be filled with new components.</p>
+            <p className='ps-2 pe-2 ms-3'>Welcome to my first react page. In it you will find a well functional calculator and a todo list.</p>
            </div>
            </div>
         </div>

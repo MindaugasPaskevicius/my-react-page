@@ -35,7 +35,7 @@ const Todo = () => {
     itemInput.current.value = "";
 
     if (newList === "") {
-      setItemErrorMsg("Can't leave the title blank");
+      setItemErrorMsg("The form cannot be empty");
 
     }
     else {
@@ -49,7 +49,7 @@ const Todo = () => {
 
 
   return (
-    <div className="container">
+    <div id="todo-container" className="container">
       <div className="text-center pt-5"><h1>Todo list</h1></div>
        <div className="d-flex justify-content-center mt-5">
          <div id="todo-card">
@@ -72,7 +72,7 @@ const Todo = () => {
               </div>
             </form>
             <div className="d-flex justify-content-center ">
-            <ul className="list-group">
+            <ul className="list-group mb-5">
               {items.length > 0 ? (
                 items.map((items, index) => (
                   <li key={index} className="list-group-item mt-2">
