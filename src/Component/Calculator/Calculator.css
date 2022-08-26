@@ -1,5 +1,5 @@
 .calculator {
-  position: relative;
+  position: revert;
   left: auto;
   top:-20px;
   width: 100%;
