@@ -2,13 +2,13 @@
     height: 100vh;
 }
 #welcome h1 {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 h1 {
     font-size: 70px;
     color: grey;
     font-family: s;
-    padding-top: 150px;
+    padding-top: 120px;
     margin-bottom: 40px;
 }
 #card {

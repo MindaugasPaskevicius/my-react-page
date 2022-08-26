@@ -44,7 +44,8 @@ button:hover {
   font-weight: 700;
   border: solid 1px rgb(78, 76, 76);
 }
-  .digits {
+.digits {
+  background-color: grey;
   display: flex;
   flex-wrap: wrap;
 }

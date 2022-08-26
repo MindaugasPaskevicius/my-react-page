@@ -1,9 +1,6 @@
 #welcome {
     min-height: 120vh;
 }
-#welcome h1 {
-    padding-top: 150px;
-}
 h1 {
     font-size: 70px;
     color: grey;
