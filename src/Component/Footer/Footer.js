@@ -5,7 +5,7 @@ const Footer = () => (
   <div className="footer">
     <div>
     <img
-            src="../images/fb.png"
+            src={process.env.PUBLIC_URL + "/images/fb.png"}
             alt="facebook logo"
             width="30"
             height="30"
@@ -14,7 +14,7 @@ const Footer = () => (
     </div>
     <div>
     <img 
-            src="../images/link.png"
+            src={process.env.PUBLIC_URL + "/images/link.png"}
             alt="linkedin logo"
             width="30"
             height="30"
@@ -23,7 +23,7 @@ const Footer = () => (
     </div>
     <div>
     <img
-            src="../images/git.png"
+            src={process.env.PUBLIC_URL + "/images/git.png"}
             alt="Github logo"
             width="30"
             height="30"

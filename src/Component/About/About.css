@@ -1,17 +1,15 @@
 #welcome {
     height: 100vh;
 }
-
 #welcome h1 {
-padding-top: 150px;
+    padding-top: 150px;
 }
-
 h1 {
     font-size: 70px;
     color: grey;
     font-family: s;
     padding-top: 150px;
-    
+    margin-bottom: 40px;
 }
 #card {
     display: flex;
@@ -22,7 +20,6 @@ h1 {
     top: 60px;
     background-color: rgb(222, 222, 168);
 }
-
 #card p {
     font-size: 30px;
     color:grey;

@@ -1,5 +1,5 @@
 #welcome {
-    height: 150vh;
+    min-height: 120vh;
 }
 #welcome h1 {
     padding-top: 150px;
@@ -17,6 +17,7 @@ h1 {
     height: 300px;
     top: 60px;
     background-color: rgb(222, 222, 168);
+    position: revert;
 }
 #card p {
     font-size: 30px;

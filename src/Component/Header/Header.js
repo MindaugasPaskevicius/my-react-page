@@ -2,13 +2,14 @@ import React from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
 
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg position-fixed">
       <div className="container-fluid">
         <a className="navbar-brand">
           <img
-            src="../images/images.jpg"
+            src={process.env.PUBLIC_URL + "/images/images.jpg"}
             alt="logo"
             width="45"
             height="35"

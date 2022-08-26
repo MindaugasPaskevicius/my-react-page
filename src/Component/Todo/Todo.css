@@ -32,3 +32,6 @@ h2 {
 #del-button {
     background-color: rgb(222, 222, 168);
 }
+.list-group-item {
+    position: revert;
+}
